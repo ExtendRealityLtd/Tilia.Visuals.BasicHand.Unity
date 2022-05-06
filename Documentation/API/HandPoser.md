@@ -29,7 +29,7 @@ Poses the hand using pre-defined settings.
   * [RestoreInputSources()]
   * [RestoreOverrideValues()]
   * [SetCurrentValues(Single, Single, Single, Single, Single)]
-  * [SetInputSources(HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType)]
+  * [SetInputSources(FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType)]
   * [SetOverrideValues(Single, Single, Single, Single, Single)]
 
 ## Details
@@ -68,7 +68,7 @@ The cached existing input sources.
 ##### Declaration
 
 ```
-protected HandController.FingerController.InputType[] cachedInputSources
+protected FingerController.InputType[] cachedInputSources
 ```
 
 #### cachedOverrideValues
@@ -85,17 +85,17 @@ protected float[] cachedOverrideValues
 
 #### Hand
 
-The hand to pose
+The hand to pose.
 
 ##### Declaration
 
 ```
-public HandController Hand { get; set; }
+public HandFacade Hand { get; set; }
 ```
 
 #### IndexFingerValue
 
-The value for the Index Finger.
+The curl value for the Index Finger.
 
 ##### Declaration
 
@@ -105,7 +105,7 @@ public float IndexFingerValue { get; set; }
 
 #### MiddleFingerValue
 
-The value for the Middle Finger.
+The curl value for the Middle Finger.
 
 ##### Declaration
 
@@ -115,7 +115,7 @@ public float MiddleFingerValue { get; set; }
 
 #### PinkyFingerValue
 
-The value for the Pinky Finger.
+The curl value for the Pinky Finger.
 
 ##### Declaration
 
@@ -125,7 +125,7 @@ public float PinkyFingerValue { get; set; }
 
 #### RingFingerValue
 
-The value for the Ring Finger.
+The curl value for the Ring Finger.
 
 ##### Declaration
 
@@ -135,7 +135,7 @@ public float RingFingerValue { get; set; }
 
 #### ThumbValue
 
-The value for the Thumb.
+The curl value for the Thumb.
 
 ##### Declaration
 
@@ -261,25 +261,25 @@ protected virtual void SetCurrentValues(float thumb, float index, float middle, 
 | System.Single | ring | The ring finger property. |
 | System.Single | pinky | The pinky finger property. |
 
-#### SetInputSources(HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType)
+#### SetInputSources(FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType)
 
 Sets the input sources on the hand.
 
 ##### Declaration
 
 ```
-protected virtual void SetInputSources(HandController.FingerController.InputType thumb, HandController.FingerController.InputType index, HandController.FingerController.InputType middle, HandController.FingerController.InputType ring, HandController.FingerController.InputType pinky)
+protected virtual void SetInputSources(FingerController.InputType thumb, FingerController.InputType index, FingerController.InputType middle, FingerController.InputType ring, FingerController.InputType pinky)
 ```
 
 ##### Parameters
 
 | Type | Name | Description |
 | --- | --- | --- |
-| [HandController.FingerController.InputType] | thumb | The thumb property. |
-| [HandController.FingerController.InputType] | index | The index finger property. |
-| [HandController.FingerController.InputType] | middle | The middle finger property. |
-| [HandController.FingerController.InputType] | ring | The ring finger property. |
-| [HandController.FingerController.InputType] | pinky | The pinky finger property. |
+| [FingerController.InputType] | thumb | The thumb property. |
+| [FingerController.InputType] | index | The index finger property. |
+| [FingerController.InputType] | middle | The middle finger property. |
+| [FingerController.InputType] | ring | The ring finger property. |
+| [FingerController.InputType] | pinky | The pinky finger property. |
 
 #### SetOverrideValues(Single, Single, Single, Single, Single)
 
@@ -302,9 +302,9 @@ protected virtual void SetOverrideValues(float thumb, float index, float middle,
 | System.Single | pinky | The pinky finger property. |
 
 [Tilia.Visuals.BasicHand]: README.md
-[HandController]: HandController.md
+[HandFacade]: HandFacade.md
 [Hand]: HandPoser.md#Hand
-[HandController.FingerController.InputType]: HandController.FingerController.InputType.md
+[FingerController.InputType]: FingerController.InputType.md
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -330,5 +330,5 @@ protected virtual void SetOverrideValues(float thumb, float index, float middle,
 [RestoreInputSources()]: #RestoreInputSources
 [RestoreOverrideValues()]: #RestoreOverrideValues
 [SetCurrentValues(Single, Single, Single, Single, Single)]: #SetCurrentValuesSingle-Single-Single-Single-Single
-[SetInputSources(HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType, HandController.FingerController.InputType)]: #SetInputSourcesHandController.FingerController.InputType-HandController.FingerController.InputType-HandController.FingerController.InputType-HandController.FingerController.InputType-HandController.FingerController.InputType
+[SetInputSources(FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType, FingerController.InputType)]: #SetInputSourcesFingerController.InputType-FingerController.InputType-FingerController.InputType-FingerController.InputType-FingerController.InputType
 [SetOverrideValues(Single, Single, Single, Single, Single)]: #SetOverrideValuesSingle-Single-Single-Single-Single

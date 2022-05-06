@@ -10,11 +10,11 @@
     {
         [Tooltip("The hand to pose.")]
         [SerializeField]
-        private HandController hand;
+        private HandFacade hand;
         /// <summary>
-        /// The hand to pose
+        /// The hand to pose.
         /// </summary>
-        public HandController Hand
+        public HandFacade Hand
         {
             get
             {
@@ -25,11 +25,11 @@
                 hand = value;
             }
         }
-        [Tooltip("The value for the Thumb.")]
+        [Tooltip("The curl value for the Thumb.")]
         [SerializeField]
         private float thumbValue;
         /// <summary>
-        /// The value for the Thumb.
+        /// The curl value for the Thumb.
         /// </summary>
         public float ThumbValue
         {
@@ -42,11 +42,11 @@
                 thumbValue = value;
             }
         }
-        [Tooltip("The value for the Index Finger.")]
+        [Tooltip("The curl value for the Index Finger.")]
         [SerializeField]
         private float indexFingerValue;
         /// <summary>
-        /// The value for the Index Finger.
+        /// The curl value for the Index Finger.
         /// </summary>
         public float IndexFingerValue
         {
@@ -59,11 +59,11 @@
                 indexFingerValue = value;
             }
         }
-        [Tooltip("The value for the Middle Finger.")]
+        [Tooltip("The curl value for the Middle Finger.")]
         [SerializeField]
         private float middleFingerValue;
         /// <summary>
-        /// The value for the Middle Finger.
+        /// The curl value for the Middle Finger.
         /// </summary>
         public float MiddleFingerValue
         {
@@ -76,11 +76,11 @@
                 middleFingerValue = value;
             }
         }
-        [Tooltip("The value for the Ring Finger.")]
+        [Tooltip("The curl value for the Ring Finger.")]
         [SerializeField]
         private float ringFingerValue;
         /// <summary>
-        /// The value for the Ring Finger.
+        /// The curl value for the Ring Finger.
         /// </summary>
         public float RingFingerValue
         {
@@ -93,11 +93,11 @@
                 ringFingerValue = value;
             }
         }
-        [Tooltip("The value for the Pinky Finger.")]
+        [Tooltip("The curl value for the Pinky Finger.")]
         [SerializeField]
         private float pinkyFingerValue;
         /// <summary>
-        /// The value for the Pinky Finger.
+        /// The curl value for the Pinky Finger.
         /// </summary>
         public float PinkyFingerValue
         {
@@ -114,7 +114,7 @@
         /// <summary>
         /// The cached existing input sources.
         /// </summary>
-        protected HandController.FingerController.InputType[] cachedInputSources = new HandController.FingerController.InputType[5];
+        protected FingerController.InputType[] cachedInputSources = new FingerController.InputType[5];
         /// <summary>
         /// The cached existing current finger values.
         /// </summary>
@@ -152,7 +152,7 @@
             CacheOverrideValues();
 
             SetOverrideValues(ThumbValue, IndexFingerValue, MiddleFingerValue, RingFingerValue, PinkyFingerValue);
-            SetInputSources(HandController.FingerController.InputType.Override, HandController.FingerController.InputType.Override, HandController.FingerController.InputType.Override, HandController.FingerController.InputType.Override, HandController.FingerController.InputType.Override);
+            SetInputSources(FingerController.InputType.Override, FingerController.InputType.Override, FingerController.InputType.Override, FingerController.InputType.Override, FingerController.InputType.Override);
         }
 
         /// <summary>
@@ -177,7 +177,7 @@
         /// <param name="middle">The middle finger property.</param>
         /// <param name="ring">The ring finger property.</param>
         /// <param name="pinky">The pinky finger property.</param>
-        protected virtual void SetInputSources(HandController.FingerController.InputType thumb, HandController.FingerController.InputType index, HandController.FingerController.InputType middle, HandController.FingerController.InputType ring, HandController.FingerController.InputType pinky)
+        protected virtual void SetInputSources(FingerController.InputType thumb, FingerController.InputType index, FingerController.InputType middle, FingerController.InputType ring, FingerController.InputType pinky)
         {
             hand.Thumb.InputSource = thumb;
             hand.IndexFinger.InputSource = index;
