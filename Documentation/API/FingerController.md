@@ -16,6 +16,7 @@ Controls the finger armature.
   * [CurrentCurlValue]
   * [FloatData]
   * [FloatLimits]
+  * [ForceTransitionThreshold]
   * [InputSource]
   * [NormalizedFloatData]
   * [OverrideValue]
@@ -26,6 +27,7 @@ Controls the finger armature.
   * [ClearFloatData()]
   * [ClearFloatLimits()]
   * [ClearSourceInput()]
+  * [DetermineCurlMotion(Single)]
   * [GetDirectionOffset(Single, Single)]
   * [OnDisable()]
   * [Process()]
@@ -133,6 +135,16 @@ The minimum and maximum limits of the given [FloatData].
 public FloatRange FloatLimits { get; set; }
 ```
 
+#### ForceTransitionThreshold
+
+The distance the current curl value has to be away from the input curl value for it to transition to that state.
+
+##### Declaration
+
+```
+public float ForceTransitionThreshold { get; set; }
+```
+
 #### InputSource
 
 The source of the input for the finger.
@@ -224,6 +236,22 @@ Clears [InputSource].
 ```
 public virtual void ClearSourceInput()
 ```
+
+#### DetermineCurlMotion(Single)
+
+Determines the way in which the curl motion will be processed.
+
+##### Declaration
+
+```
+protected virtual void DetermineCurlMotion(float targetValue)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| System.Single | targetValue | The target value for the finger curl. |
 
 #### GetDirectionOffset(Single, Single)
 
@@ -404,6 +432,7 @@ IProcessable
 [CurrentCurlValue]: #CurrentCurlValue
 [FloatData]: #FloatData
 [FloatLimits]: #FloatLimits
+[ForceTransitionThreshold]: #ForceTransitionThreshold
 [InputSource]: #InputSource
 [NormalizedFloatData]: #NormalizedFloatData
 [OverrideValue]: #OverrideValue
@@ -414,6 +443,7 @@ IProcessable
 [ClearFloatData()]: #ClearFloatData
 [ClearFloatLimits()]: #ClearFloatLimits
 [ClearSourceInput()]: #ClearSourceInput
+[DetermineCurlMotion(Single)]: #DetermineCurlMotionSingle
 [GetDirectionOffset(Single, Single)]: #GetDirectionOffsetSingle-Single
 [OnDisable()]: #OnDisable
 [Process()]: #Process

@@ -162,6 +162,23 @@
                 transitionSpeed = value;
             }
         }
+        [Tooltip("The distance the current curl value has to be away from the input curl value for it to transition to that state.")]
+        [SerializeField]
+        private float forceTransitionThreshold = 0.9f;
+        /// <summary>
+        /// The distance the current curl value has to be away from the input curl value for it to transition to that state.
+        /// </summary>
+        public float ForceTransitionThreshold
+        {
+            get
+            {
+                return forceTransitionThreshold;
+            }
+            set
+            {
+                forceTransitionThreshold = value;
+            }
+        }
         #endregion
 
         #region Reference Settings
@@ -321,23 +338,36 @@
         /// </summary>
         protected virtual void ProcessFingerCurl()
         {
+            float targetValue = 0f;
             switch (InputSource)
             {
                 case InputType.Override:
-                    StartTransition(OverrideValue);
+                    targetValue = OverrideValue;
                     break;
                 case InputType.Float:
-                    if (FloatData != null)
-                    {
-                        SetFingerCurlPosition(NormalizedFloatData);
-                    }
+                    targetValue = FloatData != null ? NormalizedFloatData : 0f;
                     break;
                 case InputType.Boolean:
-                    if (BoolData != null)
-                    {
-                        StartTransition(BoolData.Value ? 1f : 0f);
-                    }
+                    targetValue = BoolData != null ? BoolData.Value ? 1f : 0f : 0f;
                     break;
+            }
+
+            DetermineCurlMotion(targetValue);
+        }
+
+        /// <summary>
+        /// Determines the way in which the curl motion will be processed.
+        /// </summary>
+        /// <param name="targetValue">The target value for the finger curl.</param>
+        protected virtual void DetermineCurlMotion(float targetValue)
+        {
+            if (Mathf.Abs(CurrentCurlValue - targetValue) > ForceTransitionThreshold)
+            {
+                StartTransition(targetValue);
+            }
+            else
+            {
+                SetFingerCurlPosition(targetValue);
             }
         }
 
