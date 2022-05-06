@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.0.0...v2.1.0) (2022-05-06)
+
+#### Features
+
+* **FingerController:** provide threshold to determine lerp transition ([eee676e](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/eee676eaa11183ae6a27ed8859586ad350cca707))
+  > Previously the lerped transition would only happen for the boolean or override value and the float value would never lerp. This has now been customised further so it is possible to lerp a float value if the current curl value and the given target curl value exceed the transition threshold.
+
 ## [2.0.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v1.0.0...v2.0.0) (2022-05-06)
 
 #### :warning: BREAKING CHANGES :warning:
