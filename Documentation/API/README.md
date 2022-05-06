@@ -2,13 +2,13 @@
 
 ### Classes
 
-#### [HandController]
-
-Controls the hand avatar.
-
-#### [HandController.FingerController]
+#### [FingerController]
 
 Controls the finger armature.
+
+#### [HandFacade]
+
+The public facade for the hand.
 
 #### [HandPoser]
 
@@ -16,11 +16,11 @@ Poses the hand using pre-defined settings.
 
 ### Enums
 
-#### [HandController.FingerController.InputType]
+#### [FingerController.InputType]
 
 The input type to use to control the finger.
 
-[HandController]: HandController.md
-[HandController.FingerController]: HandController.FingerController.md
+[FingerController]: FingerController.md
+[HandFacade]: HandFacade.md
 [HandPoser]: HandPoser.md
-[HandController.FingerController.InputType]: HandController.FingerController.InputType.md
+[FingerController.InputType]: FingerController.InputType.md

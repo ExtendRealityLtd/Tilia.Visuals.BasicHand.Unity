@@ -7,7 +7,7 @@
 
 ## Details
 
-# Enum HandController.FingerController.InputType
+# Enum FingerController.InputType
 
 The input type to use to control the finger.
 
@@ -31,9 +31,9 @@ public enum InputType
 | Override | The [OverrideValue]. |
 
 [Tilia.Visuals.BasicHand]: README.md
-[BoolData]: HandController.FingerController.md#Tilia_Visuals_BasicHand_HandController_FingerController_BoolData
-[FloatData]: HandController.FingerController.md#Tilia_Visuals_BasicHand_HandController_FingerController_FloatData
-[OverrideValue]: HandController.FingerController.md#Tilia_Visuals_BasicHand_HandController_FingerController_OverrideValue
+[BoolData]: FingerController.md#Tilia_Visuals_BasicHand_FingerController_BoolData
+[FloatData]: FingerController.md#Tilia_Visuals_BasicHand_FingerController_FloatData
+[OverrideValue]: FingerController.md#Tilia_Visuals_BasicHand_FingerController_OverrideValue
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
