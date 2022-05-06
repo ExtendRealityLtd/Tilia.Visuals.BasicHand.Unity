@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v1.0.0...v2.0.0) (2022-05-06)
+
+#### :warning: BREAKING CHANGES :warning:
+
+* **structure:** This commit reworks how the hand controlling is done. Instead of a global hand controller that has multiple embedded finger controllers, now it has a single Finger Controller MonoBehaviour that is independent per finger and then a HandFacade that provides a simple way of accessing the FingerController collection.
+
+This means there doesn't need to be a bunch of repetitive methods for setting and clearing the FingerController properties as the FingerController can now be directly accessed. It also breaks down the logic into the smallest chunk its actually doing, which is simply controlling the finger. ([b4d9dd9](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/b4d9dd90d406b2c0cc54d2a841518075a3385f2c))
+
+#### Features
+
+* **structure:** use individual finger controller components ([b4d9dd9](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/b4d9dd90d406b2c0cc54d2a841518075a3385f2c))
+
 ## 1.0.0 (2022-05-06)
 
 #### Features
