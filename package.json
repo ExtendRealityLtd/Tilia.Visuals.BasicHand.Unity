@@ -1,23 +1,25 @@
 {
-    "name": "io.extendreality.tilia.{scope}.{feature}.{platform?}",
-    "displayName": "Tilia {scope}.{feature}.{platform?}",
-    "description": "{Description of feature.}",
-    "changelogUrl": "https://github.com/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}/blob/master/CHANGELOG.md",
-    "documentationUrl": "https://github.com/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}/tree/master/Documentation",
-    "licensesUrl": "https://github.com/ExtendRealityLtd/Tilia.CameraRigs.{scope}.{feature}.{platform?}/blob/master/LICENSE.md",
-    "version": "1.0.0",
+    "name": "io.extendreality.tilia.visuals.basichand.unity",
+    "displayName": "Tilia Visuals BasicHand Unity",
+    "description": "Basic avatar hand to represent spatial controllers for the Unity software.",
+    "changelogUrl": "https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/blob/master/CHANGELOG.md",
+    "documentationUrl": "https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/tree/master/Documentation",
+    "licensesUrl": "https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/blob/master/LICENSE.md",
+    "version": "2.0.1",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [
-        "pattern"
+        "visual",
+        "hand",
+		"avatar"
     ],
-    "homepage": "https://github.com/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}/",
+    "homepage": "https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/",
     "bugs": {
-        "url": "https://github.com/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}/issues"
+        "url": "https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/issues"
     },
     "repository": {
         "type": "git",
-        "url": "ssh://git@github.com/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}.git"
+        "url": "ssh://git@github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity.git"
     },
     "license": "MIT",
     "author": {
@@ -26,7 +28,8 @@
         "url": "https://github.com/ExtendRealityLtd"
     },
     "dependencies": {
-        "io.extendreality.zinnia.unity": "X.Y.Z"
+        "io.extendreality.zinnia.unity": "2.0.0",
+        "io.extendreality.tilia.utilities.shaders.unity": "1.3.0"
     },
     "files": [
         "*.md",
@@ -34,6 +37,8 @@
         "*.asmdef",
         "*.xml",
         "Documentation",
-        "Runtime"
+        "Runtime",
+        "Editor",
+        "docfx.json"
     ]
 }

@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 7137bc71d9dc4e34fbae308f9fa3124a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: VRTK_BasicHand
+    100006: VRTK_Hand_Bone_Forearm
+    100008: VRTK_Hand_Bone_Index_1
+    100010: VRTK_Hand_Bone_Index_2
+    100012: VRTK_Hand_Bone_Index_3
+    100014: VRTK_Hand_Bone_Index_4
+    100016: VRTK_Hand_Bone_Index_5
+    100018: VRTK_Hand_Bone_Index_5_end
+    100020: VRTK_Hand_Bone_Middle_1
+    100022: VRTK_Hand_Bone_Middle_2
+    100024: VRTK_Hand_Bone_Middle_3
+    100026: VRTK_Hand_Bone_Middle_4
+    100028: VRTK_Hand_Bone_Middle_5
+    100030: VRTK_Hand_Bone_Middle_5_end
+    100032: VRTK_Hand_Bone_Palm
+    100034: VRTK_Hand_Bone_Pinkie_1
+    100036: VRTK_Hand_Bone_Pinkie_2
+    100038: VRTK_Hand_Bone_Pinkie_3
+    100040: VRTK_Hand_Bone_Pinkie_4
+    100042: VRTK_Hand_Bone_Pinkie_5
+    100044: VRTK_Hand_Bone_Pinkie_5_end
+    100046: VRTK_Hand_Bone_Ring_1
+    100048: VRTK_Hand_Bone_Ring_2
+    100050: VRTK_Hand_Bone_Ring_3
+    100052: VRTK_Hand_Bone_Ring_4
+    100054: VRTK_Hand_Bone_Ring_5
+    100056: VRTK_Hand_Bone_Ring_5_end
+    100058: VRTK_Hand_Bone_Thumb_1
+    100060: VRTK_Hand_Bone_Thumb_2
+    100062: VRTK_Hand_Bone_Thumb_3
+    100064: VRTK_Hand_Bone_Thumb_4
+    100066: VRTK_Hand_Bone_Thumb_4_end
+    100068: VRTK_Hand_Bone_Wrist
+    400000: Armature
+    400002: //RootNode
+    400004: VRTK_BasicHand
+    400006: VRTK_Hand_Bone_Forearm
+    400008: VRTK_Hand_Bone_Index_1
+    400010: VRTK_Hand_Bone_Index_2
+    400012: VRTK_Hand_Bone_Index_3
+    400014: VRTK_Hand_Bone_Index_4
+    400016: VRTK_Hand_Bone_Index_5
+    400018: VRTK_Hand_Bone_Index_5_end
+    400020: VRTK_Hand_Bone_Middle_1
+    400022: VRTK_Hand_Bone_Middle_2
+    400024: VRTK_Hand_Bone_Middle_3
+    400026: VRTK_Hand_Bone_Middle_4
+    400028: VRTK_Hand_Bone_Middle_5
+    400030: VRTK_Hand_Bone_Middle_5_end
+    400032: VRTK_Hand_Bone_Palm
+    400034: VRTK_Hand_Bone_Pinkie_1
+    400036: VRTK_Hand_Bone_Pinkie_2
+    400038: VRTK_Hand_Bone_Pinkie_3
+    400040: VRTK_Hand_Bone_Pinkie_4
+    400042: VRTK_Hand_Bone_Pinkie_5
+    400044: VRTK_Hand_Bone_Pinkie_5_end
+    400046: VRTK_Hand_Bone_Ring_1
+    400048: VRTK_Hand_Bone_Ring_2
+    400050: VRTK_Hand_Bone_Ring_3
+    400052: VRTK_Hand_Bone_Ring_4
+    400054: VRTK_Hand_Bone_Ring_5
+    400056: VRTK_Hand_Bone_Ring_5_end
+    400058: VRTK_Hand_Bone_Thumb_1
+    400060: VRTK_Hand_Bone_Thumb_2
+    400062: VRTK_Hand_Bone_Thumb_3
+    400064: VRTK_Hand_Bone_Thumb_4
+    400066: VRTK_Hand_Bone_Thumb_4_end
+    400068: VRTK_Hand_Bone_Wrist
+    2100000: VRTK_BasicHand_Material
+    4300000: VRTK_BasicHand
+    7400000: Armature|VRTK_BasicHandArmatureAction
+    7400002: Hand_Idle
+    7400004: Hand_Thumb
+    7400006: Hand_Index
+    7400008: Hand_Middle
+    7400010: Hand_Ring
+    7400012: Hand_Pinky
+    9500000: //RootNode
+    13700000: VRTK_BasicHand
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VRTK_BasicHand_Material
+    second: {fileID: 2100000, guid: 5c6d9d4771cf16343bcc7ef2d6d5f315, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|VRTK_BasicHandArmatureAction
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Idle
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Thumb
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 6
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Index
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 17
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Middle
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 26
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Ring
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 36
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hand_Pinky
+      takeName: Armature|VRTK_BasicHandArmatureAction
+      firstFrame: 46
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
