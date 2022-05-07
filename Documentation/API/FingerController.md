@@ -13,6 +13,7 @@ Controls the finger armature.
   * [AnimationController]
   * [AnimationLayer]
   * [BoolData]
+  * [CurlLimits]
   * [CurrentCurlValue]
   * [FloatData]
   * [FloatLimits]
@@ -32,10 +33,12 @@ Controls the finger armature.
   * [OnDisable()]
   * [Process()]
   * [ProcessFingerCurl()]
+  * [SetCurlLimitsMaximum(Single)]
+  * [SetCurlLimitsMinimum(Single)]
   * [SetFingerCurlPosition(Single)]
+  * [SetFloatLimitsMaximum(Single)]
   * [SetFloatLimitsMinimum(Single)]
   * [SetSourceInput(Int32)]
-  * [SetThumbFloatLimitsMaximum(Single)]
   * [StartTransition(Single)]
   * [TransitionFingerCurlPosition(Single)]
 * [Implements]
@@ -103,6 +106,16 @@ The BooleanAction that contains the finger curl data.
 
 ```
 public BooleanAction BoolData { get; set; }
+```
+
+#### CurlLimits
+
+The minimum and maximum limits that the finger curl can extend or retract to.
+
+##### Declaration
+
+```
+public FloatRange CurlLimits { get; set; }
 ```
 
 #### CurrentCurlValue
@@ -302,6 +315,38 @@ Processes the curl of the finger.
 protected virtual void ProcessFingerCurl()
 ```
 
+#### SetCurlLimitsMaximum(Single)
+
+Sets the maximum value in [CurlLimits].
+
+##### Declaration
+
+```
+public virtual void SetCurlLimitsMaximum(float value)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| System.Single | value | The value to set maximum to. |
+
+#### SetCurlLimitsMinimum(Single)
+
+Sets the minimum value in [CurlLimits].
+
+##### Declaration
+
+```
+public virtual void SetCurlLimitsMinimum(float value)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| System.Single | value | The value to set minimum to. |
+
 #### SetFingerCurlPosition(Single)
 
 Sets the finger curl position to the given value.
@@ -317,6 +362,22 @@ protected virtual void SetFingerCurlPosition(float targetValue)
 | Type | Name | Description |
 | --- | --- | --- |
 | System.Single | targetValue | The target position to use. |
+
+#### SetFloatLimitsMaximum(Single)
+
+Sets the maximum value in [FloatLimits].
+
+##### Declaration
+
+```
+public virtual void SetFloatLimitsMaximum(float value)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| System.Single | value | The value to set maximum to. |
 
 #### SetFloatLimitsMinimum(Single)
 
@@ -349,22 +410,6 @@ public virtual void SetSourceInput(int inputTypeIndex)
 | Type | Name | Description |
 | --- | --- | --- |
 | System.Int32 | inputTypeIndex | The index of the [FingerController.InputType]. |
-
-#### SetThumbFloatLimitsMaximum(Single)
-
-Sets the maximum value in [FloatLimits].
-
-##### Declaration
-
-```
-public virtual void SetThumbFloatLimitsMaximum(float value)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Single | value | The value to set maximum to. |
 
 #### StartTransition(Single)
 
@@ -416,10 +461,12 @@ IProcessable
 [FloatData]: FingerController.md#FloatData
 [FloatLimits]: FingerController.md#FloatLimits
 [InputSource]: FingerController.md#InputSource
+[CurlLimits]: FingerController.md#CurlLimits
+[CurlLimits]: FingerController.md#CurlLimits
+[FloatLimits]: FingerController.md#FloatLimits
 [FloatLimits]: FingerController.md#FloatLimits
 [InputSource]: FingerController.md#InputSource
 [FingerController.InputType]: FingerController.InputType.md
-[FloatLimits]: FingerController.md#FloatLimits
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -429,6 +476,7 @@ IProcessable
 [AnimationController]: #AnimationController
 [AnimationLayer]: #AnimationLayer
 [BoolData]: #BoolData
+[CurlLimits]: #CurlLimits
 [CurrentCurlValue]: #CurrentCurlValue
 [FloatData]: #FloatData
 [FloatLimits]: #FloatLimits
@@ -448,10 +496,12 @@ IProcessable
 [OnDisable()]: #OnDisable
 [Process()]: #Process
 [ProcessFingerCurl()]: #ProcessFingerCurl
+[SetCurlLimitsMaximum(Single)]: #SetCurlLimitsMaximumSingle
+[SetCurlLimitsMinimum(Single)]: #SetCurlLimitsMinimumSingle
 [SetFingerCurlPosition(Single)]: #SetFingerCurlPositionSingle
+[SetFloatLimitsMaximum(Single)]: #SetFloatLimitsMaximumSingle
 [SetFloatLimitsMinimum(Single)]: #SetFloatLimitsMinimumSingle
 [SetSourceInput(Int32)]: #SetSourceInputInt32
-[SetThumbFloatLimitsMaximum(Single)]: #SetThumbFloatLimitsMaximumSingle
 [StartTransition(Single)]: #StartTransitionSingle
 [TransitionFingerCurlPosition(Single)]: #TransitionFingerCurlPositionSingle
 [Implements]: #Implements

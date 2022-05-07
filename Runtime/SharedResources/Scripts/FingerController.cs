@@ -145,6 +145,23 @@
                 floatLimits = value;
             }
         }
+        [Tooltip("The minimum and maximum limits that the finger curl can extend or retract to.")]
+        [SerializeField]
+        private FloatRange curlLimits = new FloatRange(0f, 1f);
+        /// <summary>
+        /// The minimum and maximum limits that the finger curl can extend or retract to.
+        /// </summary>
+        public FloatRange CurlLimits
+        {
+            get
+            {
+                return curlLimits;
+            }
+            set
+            {
+                curlLimits = value;
+            }
+        }
         [Tooltip("The speed in which to transition the finger to the boolean destination value.")]
         [SerializeField]
         private float transitionSpeed = 0.3f;
@@ -297,7 +314,7 @@
         /// Sets the maximum value in <see cref="FloatLimits"/>.
         /// </summary>
         /// <param name="value">The value to set maximum to.</param>
-        public virtual void SetThumbFloatLimitsMaximum(float value)
+        public virtual void SetFloatLimitsMaximum(float value)
         {
             if (!this.IsValidState())
             {
@@ -305,6 +322,34 @@
             }
 
             FloatLimits = new FloatRange(FloatLimits.minimum, value);
+        }
+
+        /// <summary>
+        /// Sets the minimum value in <see cref="CurlLimits"/>.
+        /// </summary>
+        /// <param name="value">The value to set minimum to.</param>
+        public virtual void SetCurlLimitsMinimum(float value)
+        {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
+            CurlLimits = new FloatRange(value, CurlLimits.maximum);
+        }
+
+        /// <summary>
+        /// Sets the maximum value in <see cref="CurlLimits"/>.
+        /// </summary>
+        /// <param name="value">The value to set maximum to.</param>
+        public virtual void SetCurlLimitsMaximum(float value)
+        {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
+            CurlLimits = new FloatRange(CurlLimits.minimum, value);
         }
 
         /// <summary>
@@ -352,7 +397,7 @@
                     break;
             }
 
-            DetermineCurlMotion(targetValue);
+            DetermineCurlMotion(Mathf.Clamp(targetValue, CurlLimits.minimum, CurlLimits.maximum));
         }
 
         /// <summary>
