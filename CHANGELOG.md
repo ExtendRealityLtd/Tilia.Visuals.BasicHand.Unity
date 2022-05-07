@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.2.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.1.0...v2.2.0) (2022-05-07)
+
+#### Features
+
+* **FingerController:** add curl limits to restrict curl amount ([aefb613](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/aefb6133ba833e0ce7e97408ffaeaee84585fe84))
+  > The new CurlLimits property allows the minimum and maximum level of finger curl to be applied so the input may not curl the finger all the way to the maximum or even all the way to the minimum.
+  > 
+  > There was also a badly named setter method that still referred to Thumb in the method name, this has now been removed which is technically a change that could break things for existing users but as this package is so new let's hope it is snuck in under the radar so a new major version isn't needed.
+
 ## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.0.0...v2.1.0) (2022-05-06)
 
 #### Features
