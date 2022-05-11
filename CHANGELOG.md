@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.3.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.2.1...v2.3.0) (2022-05-11)
+
+#### Features
+
+* **prefabs:** add hands poser ([bdd3c44](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/bdd3c44ecfb0a3756c56e36714aebccb12a384d3))
+  > The new Hands Poser prefab allows linked pose components to override the linked avatar hand pose under certain circumstances.
+  > 
+  > The main BasicsHandsPoser prefab allows for a left and right hand concept to make it easy to set up poses for different items.
+  > 
+  > The nested prefab of the BasicHandPoser can be used independently if needed to set up absolute poses if required.
+
 ### [2.2.1](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.2.0...v2.2.1) (2022-05-09)
 
 #### Miscellaneous Chores
