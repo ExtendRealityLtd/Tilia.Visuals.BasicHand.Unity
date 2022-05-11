@@ -1,6 +1,7 @@
 ﻿namespace Tilia.Visuals.BasicHand
 {
     using UnityEngine;
+    using Zinnia.Data.Attribute;
 
     /// <summary>
     /// The public facade for the hand.
@@ -9,13 +10,13 @@
     {
         #region Finger Settings
         [Header("Finger Settings")]
-        [Tooltip("The FingerController for the Thumb.")]
+        [Tooltip("The Finger for the Thumb.")]
         [SerializeField]
-        private FingerController thumb;
+        private Finger thumb;
         /// <summary>
-        /// The <see cref="FingerController"/> for the Thumb.
+        /// The <see cref="Finger"/> for the Thumb.
         /// </summary>
-        public FingerController Thumb
+        public Finger Thumb
         {
             get
             {
@@ -26,13 +27,13 @@
                 thumb = value;
             }
         }
-        [Tooltip("The FingerController for the Index Finger.")]
+        [Tooltip("The Finger for the Index Finger.")]
         [SerializeField]
-        private FingerController indexFinger;
+        private Finger indexFinger;
         /// <summary>
-        /// The <see cref="FingerController"/> for the Index Finger.
+        /// The <see cref="Finger"/> for the Index Finger.
         /// </summary>
-        public FingerController IndexFinger
+        public Finger IndexFinger
         {
             get
             {
@@ -43,13 +44,13 @@
                 indexFinger = value;
             }
         }
-        [Tooltip("The FingerController for the Middle Finger.")]
+        [Tooltip("The Finger for the Middle Finger.")]
         [SerializeField]
-        private FingerController middleFinger;
+        private Finger middleFinger;
         /// <summary>
-        /// The <see cref="FingerController"/> for the Middle Finger.
+        /// The <see cref="Finger"/> for the Middle Finger.
         /// </summary>
-        public FingerController MiddleFinger
+        public Finger MiddleFinger
         {
             get
             {
@@ -60,13 +61,13 @@
                 middleFinger = value;
             }
         }
-        [Tooltip("The FingerController for the Ring Finger.")]
+        [Tooltip("The Finger for the Ring Finger.")]
         [SerializeField]
-        private FingerController ringFinger;
+        private Finger ringFinger;
         /// <summary>
-        /// The <see cref="FingerController"/> for the Ring Finger.
+        /// The <see cref="Finger"/> for the Ring Finger.
         /// </summary>
-        public FingerController RingFinger
+        public Finger RingFinger
         {
             get
             {
@@ -77,13 +78,13 @@
                 ringFinger = value;
             }
         }
-        [Tooltip("The FingerController for the Pinky Finger.")]
+        [Tooltip("The Finger for the Pinky Finger.")]
         [SerializeField]
-        private FingerController pinkyFinger;
+        private Finger pinkyFinger;
         /// <summary>
-        /// The <see cref="FingerController"/> for the Pinky Finger.
+        /// The <see cref="Finger"/> for the Pinky Finger.
         /// </summary>
-        public FingerController PinkyFinger
+        public Finger PinkyFinger
         {
             get
             {
@@ -92,6 +93,27 @@
             set
             {
                 pinkyFinger = value;
+            }
+        }
+        #endregion
+        #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The GameObject containing the hand colliders.")]
+        [SerializeField]
+        [Restricted]
+        private GameObject colliderContainer;
+        /// <summary>
+        /// The <see cref="GameObject"/> containing the hand colliders.
+        /// </summary>
+        public GameObject ColliderContainer
+        {
+            get
+            {
+                return colliderContainer;
+            }
+            protected set
+            {
+                colliderContainer = value;
             }
         }
         #endregion

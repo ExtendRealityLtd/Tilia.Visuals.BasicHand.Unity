@@ -707,6 +707,7 @@ MonoBehaviour:
   middleFinger: {fileID: 7287092436766030494}
   ringFinger: {fileID: 7591707358163100119}
   pinkyFinger: {fileID: 4673057606414373037}
+  colliderContainer: {fileID: 1431058186026970}
 --- !u!95 &95718739528495300
 Animator:
   serializedVersion: 3
@@ -1612,7 +1613,11 @@ MonoBehaviour:
   floatLimits:
     minimum: 0
     maximum: 1
+  curlLimits:
+    minimum: 0
+    maximum: 1
   transitionSpeed: 0.3
+  forceTransitionThreshold: 0.9
   animationController: {fileID: 95718739528495300}
 --- !u!114 &4506506289037537103
 MonoBehaviour:
@@ -1721,7 +1726,11 @@ MonoBehaviour:
   floatLimits:
     minimum: 0
     maximum: 1
+  curlLimits:
+    minimum: 0
+    maximum: 1
   transitionSpeed: 0.3
+  forceTransitionThreshold: 0.9
   animationController: {fileID: 95718739528495300}
 --- !u!114 &8323071193597807323
 MonoBehaviour:
@@ -2057,7 +2066,11 @@ MonoBehaviour:
   floatLimits:
     minimum: 0
     maximum: 1
+  curlLimits:
+    minimum: 0
+    maximum: 1
   transitionSpeed: 0.3
+  forceTransitionThreshold: 0.9
   animationController: {fileID: 95718739528495300}
 --- !u!114 &4206573532653468395
 MonoBehaviour:
@@ -2162,7 +2175,11 @@ MonoBehaviour:
   floatLimits:
     minimum: 0
     maximum: 1
+  curlLimits:
+    minimum: 0
+    maximum: 1
   transitionSpeed: 0.3
+  forceTransitionThreshold: 0.9
   animationController: {fileID: 95718739528495300}
 --- !u!114 &106518183709144630
 MonoBehaviour:
@@ -2277,7 +2294,11 @@ MonoBehaviour:
   floatLimits:
     minimum: 0
     maximum: 1
+  curlLimits:
+    minimum: 0
+    maximum: 1
   transitionSpeed: 0.3
+  forceTransitionThreshold: 0.9
   animationController: {fileID: 95718739528495300}
 --- !u!114 &4874093797068771920
 MonoBehaviour:

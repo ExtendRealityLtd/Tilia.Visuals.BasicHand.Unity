@@ -11,34 +11,14 @@ Controls the finger armature.
   * [transitionRoutine]
 * [Properties]
   * [AnimationController]
-  * [AnimationLayer]
-  * [BoolData]
-  * [CurlLimits]
-  * [CurrentCurlValue]
-  * [FloatData]
-  * [FloatLimits]
-  * [ForceTransitionThreshold]
-  * [InputSource]
-  * [NormalizedFloatData]
-  * [OverrideValue]
-  * [TransitionSpeed]
 * [Methods]
   * [CancelTransition()]
-  * [ClearBoolData()]
-  * [ClearFloatData()]
-  * [ClearFloatLimits()]
-  * [ClearSourceInput()]
   * [DetermineCurlMotion(Single)]
   * [GetDirectionOffset(Single, Single)]
   * [OnDisable()]
   * [Process()]
   * [ProcessFingerCurl()]
-  * [SetCurlLimitsMaximum(Single)]
-  * [SetCurlLimitsMinimum(Single)]
   * [SetFingerCurlPosition(Single)]
-  * [SetFloatLimitsMaximum(Single)]
-  * [SetFloatLimitsMinimum(Single)]
-  * [SetSourceInput(Int32)]
   * [StartTransition(Single)]
   * [TransitionFingerCurlPosition(Single)]
 * [Implements]
@@ -48,11 +28,54 @@ Controls the finger armature.
 ##### Inheritance
 
 * System.Object
+* [Finger]
 * FingerController
 
 ##### Implements
 
 IProcessable
+
+##### Inherited Members
+
+[Finger.InputSource]
+
+[Finger.FloatData]
+
+[Finger.BoolData]
+
+[Finger.OverrideValue]
+
+[Finger.AnimationLayer]
+
+[Finger.FloatLimits]
+
+[Finger.CurlLimits]
+
+[Finger.TransitionSpeed]
+
+[Finger.ForceTransitionThreshold]
+
+[Finger.NormalizedFloatData]
+
+[Finger.CurrentCurlValue]
+
+[Finger.ClearSourceInput()]
+
+[Finger.ClearFloatData()]
+
+[Finger.ClearFloatLimits()]
+
+[Finger.ClearBoolData()]
+
+[Finger.SetSourceInput(Int32)]
+
+[Finger.SetFloatLimitsMinimum(Single)]
+
+[Finger.SetFloatLimitsMaximum(Single)]
+
+[Finger.SetCurlLimitsMinimum(Single)]
+
+[Finger.SetCurlLimitsMaximum(Single)]
 
 ##### Namespace
 
@@ -61,7 +84,7 @@ IProcessable
 ##### Syntax
 
 ```
-public class FingerController : MonoBehaviour, IProcessable
+public class FingerController : Finger, IProcessable
 ```
 
 ### Fields
@@ -88,116 +111,6 @@ The Animator to control the finger motion.
 public Animator AnimationController { get; protected set; }
 ```
 
-#### AnimationLayer
-
-The animation layer that the finger mask is on.
-
-##### Declaration
-
-```
-public int AnimationLayer { get; set; }
-```
-
-#### BoolData
-
-The BooleanAction that contains the finger curl data.
-
-##### Declaration
-
-```
-public BooleanAction BoolData { get; set; }
-```
-
-#### CurlLimits
-
-The minimum and maximum limits that the finger curl can extend or retract to.
-
-##### Declaration
-
-```
-public FloatRange CurlLimits { get; set; }
-```
-
-#### CurrentCurlValue
-
-The current curl value of the finger state.
-
-##### Declaration
-
-```
-public virtual float CurrentCurlValue { get; set; }
-```
-
-#### FloatData
-
-The FloatAction that contains the finger curl data.
-
-##### Declaration
-
-```
-public FloatAction FloatData { get; set; }
-```
-
-#### FloatLimits
-
-The minimum and maximum limits of the given [FloatData].
-
-##### Declaration
-
-```
-public FloatRange FloatLimits { get; set; }
-```
-
-#### ForceTransitionThreshold
-
-The distance the current curl value has to be away from the input curl value for it to transition to that state.
-
-##### Declaration
-
-```
-public float ForceTransitionThreshold { get; set; }
-```
-
-#### InputSource
-
-The source of the input for the finger.
-
-##### Declaration
-
-```
-public FingerController.InputType InputSource { get; set; }
-```
-
-#### NormalizedFloatData
-
-The normalized value of the [FloatData] based on the given [FloatLimits].
-
-##### Declaration
-
-```
-public virtual float NormalizedFloatData { get; }
-```
-
-#### OverrideValue
-
-The value to force to be used for the finger curl data.
-
-##### Declaration
-
-```
-public float OverrideValue { get; set; }
-```
-
-#### TransitionSpeed
-
-The speed in which to transition the finger to the boolean destination value.
-
-##### Declaration
-
-```
-public float TransitionSpeed { get; set; }
-```
-
 ### Methods
 
 #### CancelTransition()
@@ -208,46 +121,6 @@ Cancels an existing transition routine.
 
 ```
 protected virtual void CancelTransition()
-```
-
-#### ClearBoolData()
-
-Clears [BoolData].
-
-##### Declaration
-
-```
-public virtual void ClearBoolData()
-```
-
-#### ClearFloatData()
-
-Clears [FloatData].
-
-##### Declaration
-
-```
-public virtual void ClearFloatData()
-```
-
-#### ClearFloatLimits()
-
-Clears [FloatLimits].
-
-##### Declaration
-
-```
-public virtual void ClearFloatLimits()
-```
-
-#### ClearSourceInput()
-
-Clears [InputSource].
-
-##### Declaration
-
-```
-public virtual void ClearSourceInput()
 ```
 
 #### DetermineCurlMotion(Single)
@@ -315,38 +188,6 @@ Processes the curl of the finger.
 protected virtual void ProcessFingerCurl()
 ```
 
-#### SetCurlLimitsMaximum(Single)
-
-Sets the maximum value in [CurlLimits].
-
-##### Declaration
-
-```
-public virtual void SetCurlLimitsMaximum(float value)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Single | value | The value to set maximum to. |
-
-#### SetCurlLimitsMinimum(Single)
-
-Sets the minimum value in [CurlLimits].
-
-##### Declaration
-
-```
-public virtual void SetCurlLimitsMinimum(float value)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Single | value | The value to set minimum to. |
-
 #### SetFingerCurlPosition(Single)
 
 Sets the finger curl position to the given value.
@@ -362,54 +203,6 @@ protected virtual void SetFingerCurlPosition(float targetValue)
 | Type | Name | Description |
 | --- | --- | --- |
 | System.Single | targetValue | The target position to use. |
-
-#### SetFloatLimitsMaximum(Single)
-
-Sets the maximum value in [FloatLimits].
-
-##### Declaration
-
-```
-public virtual void SetFloatLimitsMaximum(float value)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Single | value | The value to set maximum to. |
-
-#### SetFloatLimitsMinimum(Single)
-
-Sets the minimum value in [FloatLimits].
-
-##### Declaration
-
-```
-public virtual void SetFloatLimitsMinimum(float value)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Single | value | The value to set minimum to. |
-
-#### SetSourceInput(Int32)
-
-Sets [InputSource].
-
-##### Declaration
-
-```
-public virtual void SetSourceInput(int inputTypeIndex)
-```
-
-##### Parameters
-
-| Type | Name | Description |
-| --- | --- | --- |
-| System.Int32 | inputTypeIndex | The index of the [FingerController.InputType]. |
 
 #### StartTransition(Single)
 
@@ -453,20 +246,28 @@ protected virtual IEnumerator TransitionFingerCurlPosition(float targetValue)
 
 IProcessable
 
+[Finger]: Finger.md
+[Finger.InputSource]: Finger.md#Tilia_Visuals_BasicHand_Finger_InputSource
+[Finger.FloatData]: Finger.md#Tilia_Visuals_BasicHand_Finger_FloatData
+[Finger.BoolData]: Finger.md#Tilia_Visuals_BasicHand_Finger_BoolData
+[Finger.OverrideValue]: Finger.md#Tilia_Visuals_BasicHand_Finger_OverrideValue
+[Finger.AnimationLayer]: Finger.md#Tilia_Visuals_BasicHand_Finger_AnimationLayer
+[Finger.FloatLimits]: Finger.md#Tilia_Visuals_BasicHand_Finger_FloatLimits
+[Finger.CurlLimits]: Finger.md#Tilia_Visuals_BasicHand_Finger_CurlLimits
+[Finger.TransitionSpeed]: Finger.md#Tilia_Visuals_BasicHand_Finger_TransitionSpeed
+[Finger.ForceTransitionThreshold]: Finger.md#Tilia_Visuals_BasicHand_Finger_ForceTransitionThreshold
+[Finger.NormalizedFloatData]: Finger.md#Tilia_Visuals_BasicHand_Finger_NormalizedFloatData
+[Finger.CurrentCurlValue]: Finger.md#Tilia_Visuals_BasicHand_Finger_CurrentCurlValue
+[Finger.ClearSourceInput()]: Finger.md#Tilia_Visuals_BasicHand_Finger_ClearSourceInput
+[Finger.ClearFloatData()]: Finger.md#Tilia_Visuals_BasicHand_Finger_ClearFloatData
+[Finger.ClearFloatLimits()]: Finger.md#Tilia_Visuals_BasicHand_Finger_ClearFloatLimits
+[Finger.ClearBoolData()]: Finger.md#Tilia_Visuals_BasicHand_Finger_ClearBoolData
+[Finger.SetSourceInput(Int32)]: Finger.md#Tilia_Visuals_BasicHand_Finger_SetSourceInput_System_Int32_
+[Finger.SetFloatLimitsMinimum(Single)]: Finger.md#Tilia_Visuals_BasicHand_Finger_SetFloatLimitsMinimum_System_Single_
+[Finger.SetFloatLimitsMaximum(Single)]: Finger.md#Tilia_Visuals_BasicHand_Finger_SetFloatLimitsMaximum_System_Single_
+[Finger.SetCurlLimitsMinimum(Single)]: Finger.md#Tilia_Visuals_BasicHand_Finger_SetCurlLimitsMinimum_System_Single_
+[Finger.SetCurlLimitsMaximum(Single)]: Finger.md#Tilia_Visuals_BasicHand_Finger_SetCurlLimitsMaximum_System_Single_
 [Tilia.Visuals.BasicHand]: README.md
-[FloatData]: FingerController.md#FloatData
-[FloatData]: FingerController.md#FloatData
-[FloatLimits]: FingerController.md#FloatLimits
-[BoolData]: FingerController.md#BoolData
-[FloatData]: FingerController.md#FloatData
-[FloatLimits]: FingerController.md#FloatLimits
-[InputSource]: FingerController.md#InputSource
-[CurlLimits]: FingerController.md#CurlLimits
-[CurlLimits]: FingerController.md#CurlLimits
-[FloatLimits]: FingerController.md#FloatLimits
-[FloatLimits]: FingerController.md#FloatLimits
-[InputSource]: FingerController.md#InputSource
-[FingerController.InputType]: FingerController.InputType.md
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -474,34 +275,14 @@ IProcessable
 [transitionRoutine]: #transitionRoutine
 [Properties]: #Properties
 [AnimationController]: #AnimationController
-[AnimationLayer]: #AnimationLayer
-[BoolData]: #BoolData
-[CurlLimits]: #CurlLimits
-[CurrentCurlValue]: #CurrentCurlValue
-[FloatData]: #FloatData
-[FloatLimits]: #FloatLimits
-[ForceTransitionThreshold]: #ForceTransitionThreshold
-[InputSource]: #InputSource
-[NormalizedFloatData]: #NormalizedFloatData
-[OverrideValue]: #OverrideValue
-[TransitionSpeed]: #TransitionSpeed
 [Methods]: #Methods
 [CancelTransition()]: #CancelTransition
-[ClearBoolData()]: #ClearBoolData
-[ClearFloatData()]: #ClearFloatData
-[ClearFloatLimits()]: #ClearFloatLimits
-[ClearSourceInput()]: #ClearSourceInput
 [DetermineCurlMotion(Single)]: #DetermineCurlMotionSingle
 [GetDirectionOffset(Single, Single)]: #GetDirectionOffsetSingle-Single
 [OnDisable()]: #OnDisable
 [Process()]: #Process
 [ProcessFingerCurl()]: #ProcessFingerCurl
-[SetCurlLimitsMaximum(Single)]: #SetCurlLimitsMaximumSingle
-[SetCurlLimitsMinimum(Single)]: #SetCurlLimitsMinimumSingle
 [SetFingerCurlPosition(Single)]: #SetFingerCurlPositionSingle
-[SetFloatLimitsMaximum(Single)]: #SetFloatLimitsMaximumSingle
-[SetFloatLimitsMinimum(Single)]: #SetFloatLimitsMinimumSingle
-[SetSourceInput(Int32)]: #SetSourceInputInt32
 [StartTransition(Single)]: #StartTransitionSingle
 [TransitionFingerCurlPosition(Single)]: #TransitionFingerCurlPositionSingle
 [Implements]: #Implements
