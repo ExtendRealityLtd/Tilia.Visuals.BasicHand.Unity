@@ -8,6 +8,7 @@ The public facade for the hand.
 * [Namespace]
 * [Syntax]
 * [Properties]
+  * [ColliderContainer]
   * [IndexFinger]
   * [MiddleFinger]
   * [PinkyFinger]
@@ -33,62 +34,73 @@ public class HandFacade : MonoBehaviour
 
 ### Properties
 
-#### IndexFinger
+#### ColliderContainer
 
-The [FingerController] for the Index Finger.
+The GameObject containing the hand colliders.
 
 ##### Declaration
 
 ```
-public FingerController IndexFinger { get; set; }
+public GameObject ColliderContainer { get; protected set; }
+```
+
+#### IndexFinger
+
+The [Finger] for the Index Finger.
+
+##### Declaration
+
+```
+public Finger IndexFinger { get; set; }
 ```
 
 #### MiddleFinger
 
-The [FingerController] for the Middle Finger.
+The [Finger] for the Middle Finger.
 
 ##### Declaration
 
 ```
-public FingerController MiddleFinger { get; set; }
+public Finger MiddleFinger { get; set; }
 ```
 
 #### PinkyFinger
 
-The [FingerController] for the Pinky Finger.
+The [Finger] for the Pinky Finger.
 
 ##### Declaration
 
 ```
-public FingerController PinkyFinger { get; set; }
+public Finger PinkyFinger { get; set; }
 ```
 
 #### RingFinger
 
-The [FingerController] for the Ring Finger.
+The [Finger] for the Ring Finger.
 
 ##### Declaration
 
 ```
-public FingerController RingFinger { get; set; }
+public Finger RingFinger { get; set; }
 ```
 
 #### Thumb
 
-The [FingerController] for the Thumb.
+The [Finger] for the Thumb.
 
 ##### Declaration
 
 ```
-public FingerController Thumb { get; set; }
+public Finger Thumb { get; set; }
 ```
 
 [Tilia.Visuals.BasicHand]: README.md
-[FingerController]: FingerController.md
+[Finger]: Finger.md
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
 [Properties]: #Properties
+[ColliderContainer]: #ColliderContainer
 [IndexFinger]: #IndexFinger
 [MiddleFinger]: #MiddleFinger
 [PinkyFinger]: #PinkyFinger
