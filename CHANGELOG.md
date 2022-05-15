@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.3.1](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.3.0...v2.3.1) (2022-05-15)
+
+#### Bug Fixes
+
+* **package.json:** add missing object follower dependency ([ef7d8e8](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/ef7d8e806fe3b54c8797e7b0ac3f91ccb832613e))
+  > The ObjectFollower package is a dependency of this package and was not included in the package.json which caused errors on installation if this package was not already installed.
+  > 
+  > It has now been included as standard in the package.json file.
+
 ## [2.3.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.2.1...v2.3.0) (2022-05-11)
 
 #### Features
