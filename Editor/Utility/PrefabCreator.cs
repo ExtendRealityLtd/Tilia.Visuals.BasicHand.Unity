@@ -16,11 +16,20 @@ namespace Tilia.Visuals.BasicHand.Utility
         private const string prefabSuffix = ".prefab";
 
         private const string prefabBasicHand = "Visuals.BasicHand";
+        private const string prefabHandsPoser = "Visuals.BasicHandsPoser";
 
         [MenuItem(menuItemRoot + prefabBasicHand, false, priority)]
         private static void AddBasicHand()
         {
             string prefab = prefabBasicHand + prefabSuffix;
+            string packageLocation = Path.Combine(packageRoot, package, baseDirectory, prefabDirectory, prefab);
+            CreatePrefab(packageLocation);
+        }
+
+        [MenuItem(menuItemRoot + prefabHandsPoser, false, priority)]
+        private static void AddBasicHandsPoser()
+        {
+            string prefab = prefabHandsPoser + prefabSuffix;
             string packageLocation = Path.Combine(packageRoot, package, baseDirectory, prefabDirectory, prefab);
             CreatePrefab(packageLocation);
         }
