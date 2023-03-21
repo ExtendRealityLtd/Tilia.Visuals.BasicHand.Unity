@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.19](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.3.18...v2.3.19) (2023-03-21)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 2.7.2 to 2.8.0 ([d7f5c95](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/d7f5c9593892221cd1fab626ee6d4955eac68dae))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 2.7.2 to 2.8.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v2.7.2...v2.8.0)
+
 ### [2.3.18](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.3.17...v2.3.18) (2023-03-16)
 
 #### Miscellaneous Chores
