@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.3.24...v2.4.0) (2023-04-04)
+
+#### Features
+
+* **Resources:** add multiple render pipeline materials ([3251021](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/3251021e04a6d36982cabfa744054dad69758b3c))
+  > The prefab now uses the Pipeline Material Applier to provide multiple material types for the main render pipelines to improve compatibility.
+
 ### [2.3.24](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.3.23...v2.3.24) (2023-04-03)
 
 #### Miscellaneous Chores
