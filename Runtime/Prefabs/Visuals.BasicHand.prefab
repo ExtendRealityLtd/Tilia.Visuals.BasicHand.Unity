@@ -1275,6 +1275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4047283293557658}
   - component: {fileID: 137710368452278466}
+  - component: {fileID: 6389944483168360434}
   m_Layer: 0
   m_Name: HandMesh
   m_TagString: Untagged
@@ -1289,13 +1290,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812289512735356}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 99.99997, z: 99.99997}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4180320620054190}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!137 &137710368452278466
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -1372,6 +1373,29 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00020831786, y: 0.0009755513, z: 0.0000056201243}
     m_Extent: {x: 0.0010329011, y: 0.0012315598, z: 0.0007088389}
   m_DirtyAABB: 0
+--- !u!114 &6389944483168360434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812289512735356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b57956047a5624db03bc5a1afe6900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 137710368452278466}
+  pipelines:
+  - pipelineName: (?i)default
+    materials:
+    - {fileID: 2100000, guid: f5a02e88ca15aba4ea129541c3e24450, type: 2}
+  - pipelineName: (?i)urp
+    materials:
+    - {fileID: 2100000, guid: 30eb89402c998dd419640463fe35406c, type: 2}
+  - pipelineName: (?i)hdrp
+    materials:
+    - {fileID: 2100000, guid: f76a994e76ed1374c830ceeee76a4ba4, type: 2}
 --- !u!1 &1820220216058194
 GameObject:
   m_ObjectHideFlags: 0
