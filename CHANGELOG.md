@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.7](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.4.6...v2.4.7) (2023-06-14)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([f65a88a](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/f65a88ad8a9d3ff3b164eee18b00c162d24af01a))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.3.1 to 1.4.0. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.3.1...v1.4.0)
+
 ### [2.4.6](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.4.5...v2.4.6) (2023-05-06)
 
 #### Miscellaneous Chores
