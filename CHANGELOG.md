@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.15](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.4.14...v2.4.15) (2024-04-17)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.mutators.objectfollower.unity ([e11b29d](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/commit/e11b29d6c8a6e66508c02cc05dfe760f60875529))
+  > Bumps [io.extendreality.tilia.mutators.objectfollower.unity](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity) from 2.0.19 to 2.0.20. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/compare/v2.0.19...v2.0.20)
+
 ### [2.4.14](https://github.com/ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity/compare/v2.4.13...v2.4.14) (2024-04-17)
 
 #### Miscellaneous Chores
